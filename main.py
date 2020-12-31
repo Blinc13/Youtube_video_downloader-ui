@@ -5,7 +5,7 @@ from multiprocessing import *
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import QIcon
-from Download_int2 import Ui_MainWindow
+from ui import Ui_MainWindow
 
 
 # Создаём необходимые параметры
