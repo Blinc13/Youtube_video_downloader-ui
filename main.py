@@ -95,7 +95,7 @@ class ui_init(QMainWindow, Ui_MainWindow):
 
 def main():
     app = QApplication([])
-    app.setWindowIcon(QIcon("test.jpg"))
+    app.setWindowIcon(QIcon("icon.jpg"))
     ui = ui_init()
     ui.show()
     app.exec_()
