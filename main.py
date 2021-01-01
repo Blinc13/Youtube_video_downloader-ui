@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import sys, os
-sys.path.insert(1, "/home/diman/Рабочий стол/New Folder/build/Download_2")
 from pytube import YouTube
 from multiprocessing import *
 from PyQt5.QtCore import *
@@ -101,7 +100,7 @@ class ui_init(QMainWindow, Ui_MainWindow):
 
 def main():
     app = QApplication([])
-    app.setWindowIcon(QIcon("/home/diman/Рабочий стол/New Folder/test.jpg"))
+    app.setWindowIcon(QIcon("icon.jpg"))
     ui = ui_init()
     ui.show()
     app.exec_()
