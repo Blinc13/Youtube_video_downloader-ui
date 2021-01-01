@@ -50,6 +50,7 @@ class ui_init(QMainWindow, Ui_MainWindow):
         self.pushButton_2.clicked.connect(self.text)
         self.pushButton_3.clicked.connect(self.dir)
         self.setFixedSize(self.size())
+        self.setWindowTitle("Youtube Video Downloader")
 
     def text(self):
         self.URL = self.plainTextEdit.toPlainText()
