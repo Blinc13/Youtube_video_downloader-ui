@@ -9,7 +9,6 @@ from ui import Ui_MainWindow
 
 
 # Создаём необходимые параметры
-os.chdir("Видео")
 directory = os.getcwd()
 
     
@@ -104,6 +103,7 @@ def main():
     app = QApplication([])
     app.setWindowIcon(QIcon("icon.jpg"))
     ui = ui_init()
+    os.chdir("Видео")
     ui.show()
     app.exec_()
 
