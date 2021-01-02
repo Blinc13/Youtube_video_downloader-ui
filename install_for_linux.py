@@ -1,4 +1,4 @@
-import os, shutil
+import os, shutil, sys
 
 
 desktop = ["[Desktop Entry]", "Name=Youtube Video Downloader", "Terminal=false", "Type=Application"]
@@ -18,7 +18,11 @@ except:
     try:
         os.chdir("Рабочий стол")
     except:
-        os.chdir("Desktop")
+        try:
+            os.chdir("Desktop")
+        except:
+            print ("Ошибка")
+            sys.exit()
 
 with open("Youtube_downloader.desktop", "w") as file:
     for i in desktop:
