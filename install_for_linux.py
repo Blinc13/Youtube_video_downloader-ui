@@ -13,13 +13,13 @@ desktop.append("Exec=python3 " + directory2 + "/main.py")
 desktop.append("Icon=" + directory2 + "/icon.jpg")
 
 try:
-    os.chdir("Работчий стол")
+    os.chdir('Работчий стол')
 except:
     try:
-        os.chdir("Рабочий стол")
+        os.chdir('Рабочий стол')
     except:
         try:
-            os.chdir("Desktop")
+            os.chdir('Desktop')
         except:
             print ("Ошибка")
             sys.exit()
@@ -27,5 +27,3 @@ except:
 with open("Youtube_downloader.desktop", "w") as file:
     for i in desktop:
         file.write(i + "\n")
-
-os.system("ln -s Загрузки .Youtube_downloader/video")
