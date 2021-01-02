@@ -102,7 +102,7 @@ class ui_init(QMainWindow, Ui_MainWindow):
 
 def main():
     app = QApplication([])
-    app.setWindowIcon(QIcon("/home/diman/Youtube_video_downloader-ui/icon.jpg"))
+    app.setWindowIcon(QIcon("icon.jpg"))
     ui = ui_init()
     ui.show()
     app.exec_()
