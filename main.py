@@ -9,6 +9,7 @@ from ui import Ui_MainWindow
 
 
 # Создаём необходимые параметры
+os.chdir("video")
 directory = os.getcwd()
 
     
@@ -101,7 +102,7 @@ class ui_init(QMainWindow, Ui_MainWindow):
 
 def main():
     app = QApplication([])
-    app.setWindowIcon(QIcon("icon.jpg"))
+    app.setWindowIcon(QIcon("/home/diman/Youtube_video_downloader-ui/icon.jpg"))
     ui = ui_init()
     ui.show()
     app.exec_()
