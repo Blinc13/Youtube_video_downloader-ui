@@ -16,7 +16,6 @@ while g > 2:
     g -= 1
 
 directory2 = os.getcwd() + "/" + ".Youtube_downloader"
-print (os.getcwd())
 os.mkdir(name)
 shutil.copy2(directory1 + "/main.py", name); shutil.copy2(directory1 + "/ui.py", name); shutil.copy2(directory1 + "/icon.jpg", name)
 desktop.append("Exec=python3 " + directory2 + "/main.py")
@@ -28,3 +27,5 @@ os.chdir(q[:len(q)-1])
 with open("Youtube_downloader.desktop", "w") as file:
     for i in desktop:
         file.write(i + "\n")
+
+print (os.getcwd() + "\n" + "Complite")
