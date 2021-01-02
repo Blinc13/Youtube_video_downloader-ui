@@ -9,6 +9,7 @@ from ui import Ui_MainWindow
 
 
 # Создаём необходимые параметры
+os.chdir("video")
 directory = os.getcwd()
 
     
