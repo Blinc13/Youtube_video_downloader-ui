@@ -21,8 +21,7 @@ shutil.copy2(directory1 + "/main.py", name); shutil.copy2(directory1 + "/ui.py",
 desktop.append("Exec=python3 " + directory2 + "/main.py")
 desktop.append("Icon=" + directory2 + "/icon.jpg")
 
-q = subprocess.check_output(["xdg-user-dir", "DESKTOP"]).decode("UTF-8")
-os.chdir(q[:len(q)-1])
+os.chdir(subprocess.check_output(["xdg-user-dir", "DESKTOP"]).decode("UTF-8")[:-1])
 
 with open("Youtube_downloader.desktop", "w") as file:
     for i in desktop:
